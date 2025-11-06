@@ -1,0 +1,136 @@
+# 🟦 VoicePay – Accessible Passkey Wallet on Base
+
+A voice-first, accessibility-focused wallet for blind and low-vision users.
+Built on **Base** with **Passkeys (WebAuthn)** + **ERC-4337 smart accounts**.
+Send and receive crypto through **voice commands** and **spoken confirmations** — no typing, no passwords.
+
+---
+
+## 🌟 Overview
+
+VoicePay is an open-source wallet designed to make blockchain payments accessible for everyone.
+It enables users—especially blind and visually impaired individuals—to:
+
+* ✅ Create and access accounts using **Passkeys** (no passwords)
+* ✅ Send crypto using **voice commands**
+* ✅ Receive crypto using **VoiceTags**, ENS, or QR codes
+* ✅ Hear every transaction **spoken out loud** before confirming
+* ✅ Use a fully **screen-reader-optimized** interface
+
+---
+
+## 🔐 Features
+
+### **1. Passkey-Based Authentication**
+
+* Secure WebAuthn login
+* Passwordless and phishing-resistant
+* Works across supported devices
+
+### **2. Voice-Activated Payments**
+
+Examples:
+
+* "Send 0.05 ETH to Anu"
+* "Check my balance"
+* "Receive money"
+
+### **3. Spoken Transaction Review**
+
+Before sending, VoicePay reads back:
+
+* Amount
+* Token
+* Recipient name/address
+* Network fee
+
+### **4. Inclusive & Accessible UI**
+
+* High-contrast mode
+* Screen-reader support
+* Large action buttons
+* Full keyboard navigation
+* Vibration & audio cues
+
+---
+
+## 🧱 Architecture
+
+```
+voicepay-passkey-base/
+│
+├── contracts/
+│   └── PasskeyAccount.sol
+│
+├── web/
+│   ├── app/
+│   │   └── page.js
+│   ├── components/
+│   │   └── VoicePayUI.jsx
+│   └── package.json
+│
+└── README.md
+```
+
+* **Contracts:** ERC-4337 smart account with passkey owner verification
+* **Frontend:** Next.js + WebAuthn + voice I/O
+* **Paymaster (optional):** Gas sponsorship for new users
+
+---
+
+## 🚀 Getting Started
+
+### **Clone the project:**
+
+```bash
+git clone https://github.com/YOUR-USERNAME/voicepay-passkey-base
+cd voicepay-passkey-base
+```
+
+### **Install dependencies:**
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!
+Some easy starter tasks:
+
+* Add ARIA labels to UI components
+* Improve voice intent parser
+* Add more spoken warnings and confirmations
+* Enhance Passkey integration
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## 💙 Support Accessibility
+
+VoicePay is built to make blockchain more inclusive.
+If you believe in accessible tech, consider contributing to the repo or sharing the project.
+
+---
+
+### ✅ **How it looks on GitHub**
+
+This README is formatted to display perfectly on GitHub with:
+
+* Headers
+* Emojis
+* Code blocks
+* Clean section spacing
+* Directory tree
+* Instructions
+
+You can preview it directly after committing the file to the repo.
