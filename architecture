@@ -1,0 +1,13 @@
+voicepay-passkey-base/
+│
+├── contracts/
+│ └── PasskeyAccount.sol
+│
+├── web/
+│ ├── app/
+│ │ └── page.js
+│ ├── components/
+│ │ └── VoicePayUI.jsx
+│ └── package.json
+│
+└── README.md
